@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.scene {
+  position: relative;
+  width: 210px;
+  height: 140px;
+  margin: 80px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  opacity: 0;
+  position: absolute;
+  max-width: 250px;
+  width: 250px;
+  max-height: 250px;
+  height: 250px;
+  left: 10px;
+  top: 10px;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+
+.emblem__img {
+  width:  90%;
+  height: 90%;
+  padding: 40px;
+}
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: hsla(0, 0%, 100%, 0.8);
+}
